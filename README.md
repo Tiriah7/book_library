@@ -10,22 +10,22 @@ Ensure you have the following installed:
   - Node.js (for JavaScript dependencies)
 
 #Clone the Repository
-git clone https://github.com/Tiriah7/book_library.git
-cd book_library
+  - git clone https://github.com/Tiriah7/book_library.git
+  - cd book_library
 
 #Install Dependencies
-bundle install
+  - bundle install
 
 #Set Up the Database
-rails db:create
-rails db:migrate
-rails db:seed  # Optional: Seed initial data
+  - rails db:create
+  - rails db:migrate
+  - rails db:seed  # Optional: Seed initial data
 
 #Start the Server
-rails server
+  - rails server
 
 #Running Tests
-rails test (for all tests)
-rails test test/models (to test models)
-rails test test/controllers (to test controllers)
+  - rails test (for all tests)
+  - rails test test/models (to test models)
+  - rails test test/controllers (to test controllers)
 
