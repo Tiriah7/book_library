@@ -4,10 +4,10 @@ a simple book lending library application using Ruby on Rails 8
 #Prerequisites
 
 Ensure you have the following installed:
-Ruby (>= 3.0.0)
-Rails (>= 8.0.1)
-PostgreSQL 
-Node.js (for JavaScript dependencies)
+  - Ruby (>= 3.0.0)
+  - Rails (>= 8.0.1)
+  - PostgreSQL 
+  - Node.js (for JavaScript dependencies)
 
 #Clone the Repository
 git clone https://github.com/Tiriah7/book_library.git
