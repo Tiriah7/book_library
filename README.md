@@ -1,4 +1,4 @@
-# book-library
+# book_library
 a simple book lending library application using Ruby on Rails 8
 
 #Prerequisites
