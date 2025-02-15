@@ -1,0 +1,11 @@
+<h1><%= @book.title %></h1>
+<p><strong>Author:</strong> <%= @book.author %></p>
+<p><strong>ISBN:</strong> <%= @book.isbn %></p>
+
+<% if @book.available? %>
+  <%= button_to "Borrow", borrow_book_path(@book), method: :post %>
+<% else %>
+  <p><strong>Not Available</strong></p>
+<% end %>
+
+<%= link_to "Back to books", books_path %>

@@ -1,0 +1,8 @@
+<h1>Borrowed Books</h1>
+<ul>
+  <% @borrowings.each do |borrowing| %>
+    <li>
+      <%= borrowing.book.title %> - Borrowed by <%= borrowing.user.email %>
+    </li>
+  <% end %>
+</ul>

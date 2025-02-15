@@ -1,0 +1,19 @@
+<h1>My Profile</h1>
+<p>Email: <%= current_user.email %></p>
+
+<h2>Borrowed Books</h2>
+<% if @borrowed_books.any? %>
+  <ul>
+    <% @borrowed_books.each do |borrowing| %>
+      <li>
+        <%= borrowing.book.title %> by <%= borrowing.book.author %> 
+        (Due Date: <%= borrowing.due_date %>)
+        <% unless borrowing.returned %>
+          | <%= button_to "Return", return_book_path(borrowing.book), method: :post %>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>You have not borrowed any books.</p>
+<% end %>
